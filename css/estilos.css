@@ -1,0 +1,38 @@
+html, body {
+	width:100vw;
+	height:100vh;
+	background-color: DarkGrey;
+}
+
+@font-face {
+	font-family: headerfont;
+	src: url("HearthStone.otf");
+}
+
+header {
+	height:15vh;
+	width: 85vw;
+	background-color: DimGrey; 
+	padding-top: 5px;
+}
+
+#container {
+	height: 100vh;
+	width:85vw;
+	margin-left:7.5%; 
+	margin-right:7.5%;
+	background-color: DimGrey;
+	-webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 8px 2px rgba(0,0,0,1);
+	box-shadow: 5px 5px 8px 2px rgba(0,0,0,1);
+}
+
+#cabecera {
+	font-family: headerfont;
+	font color:black;
+	text-align: center;
+	font-size:50px;
+	margin-top:25px;
+}
+
+
