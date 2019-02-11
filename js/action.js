@@ -1,7 +1,7 @@
-window.onload(function(){
-	document.getElementsByClassName("link").onmouseover = shadow;
-})
-
-function shadow() {
-	document.getElementsByClassName("link").style.text-shadow = "1px 2px white";
-}
+$( window ).on("load", function(){
+	$(".link").forEach (function()  {
+		$("this").mouseenter(function() {
+			$("this").css(background-color,blue);
+		});
+	});
+});
