@@ -79,3 +79,6 @@ main {
 	float: left;
 	display: block;
 }
+#contact {
+	border-right:0px;
+}
