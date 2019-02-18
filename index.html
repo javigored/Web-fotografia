@@ -1,28 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<script type="text/javascript" src="js/action.js"></script>
-	<link rel=”shortcut icon” type=”image/png” href=”/favicon.png”/>
 	<title>Dripy Photography</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/action.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
 </head>
 <body>
 	<div id="container">
-		<header><p id="cabecera">Dripy Photography</p></header>
-		<nav>
-			<ul>
-				<li><a href="index.html" class="link">Inicio</a></li>
-				<li><a href="sesiones.html" class="link">Sesiones</a></li>
-				<li><a href="landascapes.html" class="link">Landscapes</a></li>
-				<li><a href="timelapse.html" class ="link">Timelapse</a></li>
-				<li id="contact"><a href="contacto.html" class="link">Contacto</a></li>
-			</ul>
-		</nav>
+			<header>
+				<div id="logo"><img src="logo.png"></div>
+				<p id="cabecera">Dripy Photography</p>
+			</header>
+			<div class="wrapper">
+			<nav>
+				<ul>
+					<li><a href="index.html" class="link">Inicio</a></li>
+					<li><a href="sesiones.html" class="link">Sesiones</a></li>
+					<li><a href="natura.html" class="link">Natura</a></li>
+					<li><a href="urbano.html" class ="link">Urban Art</a></li>
+					<li id="contact"><a href="contacto.html" class="link">Contacto</a></li>
+				</ul>
+			</nav>
+			</div>
 		<main>
-			<aside></aside>
-			<div id="principal"></div>
+			<div class="carousel">
+			    <button id="retroceder">Back</button>
+			    <div id="imagen"></div>
+			    <button id="avanzar">Next</button>
+			</div>
+			<div class="controles">
+			    <button id="play">Play</button>
+			    <button id="stop" disabled>Stop</button>
+			</div>
+			<div id="visible">
+				<img src="img/fotoperfil.jpg" width="150" height="150"></img>
+				<p>Andrew Dripy es un fotografo usuario de una reflex <span><b>Canon </b></span> <span><b>Eos600d</b></span> y amante de las sesiones de naturaleza y urbanas. <br> <br>Contacto: <b>dripyphotography@gmail.com</b></p>
+			</div>
+			<div id = "principal">
+				<article class = "photo">
+					<img src="canon/natura3.jpg">
+					<span>Parque de las barcas.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura4.jpg">
+					<span>Forever alone.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura5.jpg">
+					<span>A flower.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura6.jpg">
+					<span>Natura enzarzada.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura7.jpg">
+					<span>Fondo humano.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura8.jpg">
+					<span>The big tree.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura9.jpg">
+					<span>Gemelas rosas.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura10.jpg">
+					<span>Fondo turbio.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura11.jpg">
+					<span>Low city.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura12.jpg">
+					<span>Cielo apagado.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura13.jpg">
+					<span>Ramitas 1.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura14.jpg">
+					<span>Luna de dia.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura15.jpg">
+					<span>Luna de noche.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/natura16.jpg">
+					<span>Ramitas 2.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano2.jpg">
+					<span>Plaza de la Vila.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano3.jpg">
+					<span>Ayuntamiento del Prat.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano4.jpg">
+					<span>Tienda barroca.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano5.jpg">
+					<span>Urban black.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano6.jpg">
+					<span>Urban white.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano7.jpg">
+					<span>Tenebras 1.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano8.jpg">
+					<span>Tenebras 2.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano9.jpg">
+					<span>Tenebras 3.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano10.jpg">
+					<span>Iglesia del Prat 1.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano11.jpg">
+					<span>Iglesia del Prat 2.</span>
+				</article>
+				<article class = "photo">
+					<img src="canon/urbano12.jpg">
+					<span>Darkness city.</span>
+				</article>
+			</div>
 		</main>
-		<footer></footer>
+		<footer>
+			<p id="copy"><b><span>Dripy</span> Photography 2019 ©.</b>
+				<br><br> All fotos are property of <span>Andrew Navas</span> and web structure its maked by Javi <span>Gored</span>.</p>
+				<a id="top" href="#logo">To the TOP</a>
+		</footer>
 	</div>
 </body>
 </html>
